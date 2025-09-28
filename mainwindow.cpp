@@ -11,8 +11,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 	auto app = MyAppSettings::self();
     auto tag = app->isAutoSaveImmutable();
-    app->setProperty("AutoSave", true);
     app->setWindowWidth(555);
+    app->setWindowHeight(800);
+    app->setAutoSave(false);
     auto bflag = app->save();
     int a{ 0 };
 }
