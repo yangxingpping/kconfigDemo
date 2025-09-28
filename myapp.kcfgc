@@ -1,0 +1,5 @@
+File=myapp.kcfg
+ClassName=MyAppSettings
+
+Singleton=true
+Mutators=true
