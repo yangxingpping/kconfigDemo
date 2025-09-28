@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
 	auto app = MyAppSettings::self();
     auto tag = app->isAutoSaveImmutable();
     app->setWindowWidth(555);
-    app->setWindowHeight(800);
+    app->setWindowHeight(700);
     app->setAutoSave(false);
     auto bflag = app->save();
     int a{ 0 };
