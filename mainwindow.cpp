@@ -2,6 +2,7 @@
 #include "./ui_mainwindow.h"
 
 #include "myapp.h"
+#include "kSharedConfig"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -12,7 +13,7 @@ MainWindow::MainWindow(QWidget *parent)
     auto tag = app->isAutoSaveImmutable();
     app->setProperty("AutoSave", true);
     app->setWindowWidth(555);
-
+    auto bflag = app->save();
     int a{ 0 };
 }
 
